@@ -1,0 +1,1057 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local AbsoluteHub = Instance.new("ScreenGui")
+local drag = Instance.new("Frame")
+local ahfrm = Instance.new("Frame")
+local options = Instance.new("ScrollingFrame")
+local LocalPlayer = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Other = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Info = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local border = Instance.new("Frame")
+local info = Instance.new("Frame")
+local Avatar = Instance.new("ImageLabel")
+local UICorner_4 = Instance.new("UICorner")
+local UserInfo = Instance.new("Frame")
+local Name = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local UserInfo_2 = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local Name_2 = Instance.new("TextLabel")
+local empti = Instance.new("TextLabel")
+local lolxx = Instance.new("TextLabel")
+local LocalPlayer_2 = Instance.new("Frame")
+local options_2 = Instance.new("ScrollingFrame")
+local plrName = Instance.new("TextBox")
+local fling = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Kill = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local ws = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Value = Instance.new("TextBox")
+local jp = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local health = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local fov = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local Other_2 = Instance.new("Frame")
+local options_3 = Instance.new("ScrollingFrame")
+local iy = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local ih = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local esp = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local arsenal = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local UICorner_17 = Instance.new("UICorner")
+local title = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local UICorner_19 = Instance.new("UICorner")
+local buton = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+
+--Properties:
+
+AbsoluteHub.Name = "AbsoluteHub"
+AbsoluteHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+AbsoluteHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+AbsoluteHub.ResetOnSpawn = false
+
+drag.Name = "drag"
+drag.Parent = AbsoluteHub
+drag.AnchorPoint = Vector2.new(0.5, 0.5)
+drag.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+drag.BorderColor3 = Color3.fromRGB(0, 0, 0)
+drag.BorderSizePixel = 0
+drag.Position = UDim2.new(0.499908835, 0, 0.229330704, 0)
+drag.Size = UDim2.new(0, 444, 0, 27)
+
+ahfrm.Name = "ahfrm"
+ahfrm.Parent = drag
+ahfrm.AnchorPoint = Vector2.new(0.5, 0.5)
+ahfrm.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+ahfrm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ahfrm.BorderSizePixel = 0
+ahfrm.Position = UDim2.new(0.499934554, 0, 6.28086472, 0)
+ahfrm.Size = UDim2.new(0, 444, 0, 287)
+
+options.Name = "options"
+options.Parent = ahfrm
+options.Active = true
+options.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+options.BackgroundTransparency = 1.000
+options.BorderColor3 = Color3.fromRGB(0, 0, 0)
+options.BorderSizePixel = 0
+options.Size = UDim2.new(0, 102, 0, 287)
+options.CanvasSize = UDim2.new(0, 0, 3, 0)
+options.ScrollBarThickness = 7
+
+LocalPlayer.Name = "LocalPlayer"
+LocalPlayer.Parent = options
+LocalPlayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LocalPlayer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LocalPlayer.BorderSizePixel = 0
+LocalPlayer.Size = UDim2.new(0, 95, 0, 40)
+LocalPlayer.Font = Enum.Font.FredokaOne
+LocalPlayer.Text = "LocalPlayer"
+LocalPlayer.TextColor3 = Color3.fromRGB(0, 0, 0)
+LocalPlayer.TextScaled = true
+LocalPlayer.TextSize = 14.000
+LocalPlayer.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0.100000001, 0)
+UICorner.Parent = LocalPlayer
+
+Other.Name = "Other"
+Other.Parent = options
+Other.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Other.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Other.BorderSizePixel = 0
+Other.Position = UDim2.new(0, 0, 0.048780486, 0)
+Other.Size = UDim2.new(0, 95, 0, 40)
+Other.Font = Enum.Font.FredokaOne
+Other.Text = "Other"
+Other.TextColor3 = Color3.fromRGB(0, 0, 0)
+Other.TextScaled = true
+Other.TextSize = 14.000
+Other.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_2.Parent = Other
+
+Info.Name = "Info"
+Info.Parent = options
+Info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Info.BorderSizePixel = 0
+Info.Position = UDim2.new(0, 0, 0.0989999995, 0)
+Info.Size = UDim2.new(0, 95, 0, 40)
+Info.Font = Enum.Font.FredokaOne
+Info.Text = "Info"
+Info.TextColor3 = Color3.fromRGB(0, 0, 0)
+Info.TextScaled = true
+Info.TextSize = 14.000
+Info.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_3.Parent = Info
+
+border.Name = "border"
+border.Parent = ahfrm
+border.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+border.BorderColor3 = Color3.fromRGB(0, 0, 0)
+border.BorderSizePixel = 0
+border.Position = UDim2.new(0.229729727, 0, 0, 0)
+border.Size = UDim2.new(0, 8, 0, 287)
+
+info.Name = "info"
+info.Parent = ahfrm
+info.AnchorPoint = Vector2.new(0.5, 0.5)
+info.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+info.BorderColor3 = Color3.fromRGB(0, 0, 0)
+info.BorderSizePixel = 0
+info.Position = UDim2.new(0.623906612, 0, 0.503484309, 0)
+info.Size = UDim2.new(0, 334, 0, 285)
+
+Avatar.Name = "Avatar"
+Avatar.Parent = info
+Avatar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Avatar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Avatar.BorderSizePixel = 0
+Avatar.Position = UDim2.new(0.0239520967, 0, 0.0350877196, 0)
+Avatar.Size = UDim2.new(0, 100, 0, 100)
+Avatar.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_4.CornerRadius = UDim.new(1, 0)
+UICorner_4.Parent = Avatar
+
+UserInfo.Name = "UserInfo"
+UserInfo.Parent = Avatar
+UserInfo.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+UserInfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UserInfo.BorderSizePixel = 0
+UserInfo.Position = UDim2.new(1.05999994, 0, 0.100000001, 0)
+UserInfo.Size = UDim2.new(0, 210, 0, 42)
+
+Name.Name = "Name"
+Name.Parent = UserInfo
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Name.BorderSizePixel = 0
+Name.Position = UDim2.new(0.042857144, 0, 0, 0)
+Name.Size = UDim2.new(0, 191, 0, 36)
+Name.Font = Enum.Font.SourceSans
+Name.Text = "Name: AbsoluteHubForDays"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextScaled = true
+Name.TextSize = 14.000
+Name.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(1, 0)
+UICorner_5.Parent = UserInfo
+
+UserInfo_2.Name = "UserInfo"
+UserInfo_2.Parent = Avatar
+UserInfo_2.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+UserInfo_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UserInfo_2.BorderSizePixel = 0
+UserInfo_2.Position = UDim2.new(1.05999994, 0, 0.629999995, 0)
+UserInfo_2.Size = UDim2.new(0, 210, 0, 37)
+
+UICorner_6.CornerRadius = UDim.new(1, 0)
+UICorner_6.Parent = UserInfo_2
+
+Name_2.Name = "Name"
+Name_2.Parent = UserInfo_2
+Name_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_2.BackgroundTransparency = 1.000
+Name_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Name_2.BorderSizePixel = 0
+Name_2.Position = UDim2.new(0.042857144, 0, -0.00965262763, 0)
+Name_2.Size = UDim2.new(0, 191, 0, 34)
+Name_2.Font = Enum.Font.SourceSans
+Name_2.Text = "Display name: AbsoluteHubForDays"
+Name_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_2.TextScaled = true
+Name_2.TextSize = 14.000
+Name_2.TextWrapped = true
+
+empti.Name = "empti"
+empti.Parent = info
+empti.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+empti.BackgroundTransparency = 1.000
+empti.BorderColor3 = Color3.fromRGB(0, 0, 0)
+empti.BorderSizePixel = 0
+empti.Position = UDim2.new(0.0868263468, 0, 0.529824555, 0)
+empti.Size = UDim2.new(0, 276, 0, 68)
+empti.Font = Enum.Font.FredokaOne
+empti.Text = "Thats it, nothing down here"
+empti.TextColor3 = Color3.fromRGB(255, 255, 255)
+empti.TextScaled = true
+empti.TextSize = 14.000
+empti.TextWrapped = true
+
+lolxx.Name = "lolxx"
+lolxx.Parent = info
+lolxx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lolxx.BackgroundTransparency = 1.000
+lolxx.BorderColor3 = Color3.fromRGB(0, 0, 0)
+lolxx.BorderSizePixel = 0
+lolxx.Position = UDim2.new(0.00898203626, 0, 0.947368443, 0)
+lolxx.Size = UDim2.new(0, 110, 0, 9)
+lolxx.Font = Enum.Font.FredokaOne
+lolxx.Text = "Made by MPTH Revamped"
+lolxx.TextColor3 = Color3.fromRGB(255, 255, 255)
+lolxx.TextScaled = true
+lolxx.TextSize = 14.000
+lolxx.TextWrapped = true
+
+LocalPlayer_2.Name = "LocalPlayer"
+LocalPlayer_2.Parent = ahfrm
+LocalPlayer_2.AnchorPoint = Vector2.new(0.5, 0.5)
+LocalPlayer_2.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+LocalPlayer_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LocalPlayer_2.BorderSizePixel = 0
+LocalPlayer_2.Position = UDim2.new(0.623906612, 0, 0.503484309, 0)
+LocalPlayer_2.Size = UDim2.new(0, 334, 0, 285)
+LocalPlayer_2.Visible = false
+
+options_2.Name = "options"
+options_2.Parent = LocalPlayer_2
+options_2.Active = true
+options_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+options_2.BackgroundTransparency = 1.000
+options_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+options_2.BorderSizePixel = 0
+options_2.Size = UDim2.new(0, 333, 0, 285)
+options_2.CanvasSize = UDim2.new(0, 0, 3, 0)
+options_2.ScrollBarThickness = 7
+
+plrName.Name = "plrName"
+plrName.Parent = options_2
+plrName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+plrName.BorderColor3 = Color3.fromRGB(0, 0, 0)
+plrName.BorderSizePixel = 0
+plrName.Position = UDim2.new(0.0240240246, 0, 0.0175438598, 0)
+plrName.Size = UDim2.new(0, 138, 0, 35)
+plrName.ClearTextOnFocus = false
+plrName.Font = Enum.Font.Highway
+plrName.PlaceholderText = "Player Name"
+plrName.Text = ""
+plrName.TextColor3 = Color3.fromRGB(0, 0, 0)
+plrName.TextScaled = true
+plrName.TextSize = 14.000
+plrName.TextWrapped = true
+
+fling.Name = "fling"
+fling.Parent = options_2
+fling.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fling.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fling.BorderSizePixel = 0
+fling.Position = UDim2.new(0.075075075, 0, 0.0912309587, 0)
+fling.Size = UDim2.new(0, 65, 0, 35)
+fling.Font = Enum.Font.SourceSans
+fling.Text = "Fling"
+fling.TextColor3 = Color3.fromRGB(0, 0, 0)
+fling.TextScaled = true
+fling.TextSize = 14.000
+fling.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_7.Parent = fling
+
+Kill.Name = "Kill"
+Kill.Parent = options_2
+Kill.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Kill.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Kill.BorderSizePixel = 0
+Kill.Position = UDim2.new(0.342342347, 0, 0.0912367404, 0)
+Kill.Size = UDim2.new(0, 65, 0, 35)
+Kill.Font = Enum.Font.SourceSans
+Kill.Text = "Kill(Broken)"
+Kill.TextColor3 = Color3.fromRGB(0, 0, 0)
+Kill.TextScaled = true
+Kill.TextSize = 14.000
+Kill.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_8.Parent = Kill
+
+ws.Name = "ws"
+ws.Parent = options_2
+ws.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ws.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ws.BorderSizePixel = 0
+ws.Position = UDim2.new(0.609609604, 0, 0.0912540928, 0)
+ws.Size = UDim2.new(0, 65, 0, 35)
+ws.Font = Enum.Font.SourceSans
+ws.Text = "WalkSpeed"
+ws.TextColor3 = Color3.fromRGB(0, 0, 0)
+ws.TextScaled = true
+ws.TextSize = 14.000
+ws.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_9.Parent = ws
+
+Value.Name = "Value"
+Value.Parent = options_2
+Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Value.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Value.BorderSizePixel = 0
+Value.Position = UDim2.new(0.519519508, 0, 0.0175438598, 0)
+Value.Size = UDim2.new(0, 141, 0, 35)
+Value.ClearTextOnFocus = false
+Value.Font = Enum.Font.Highway
+Value.PlaceholderText = "Value"
+Value.Text = ""
+Value.TextColor3 = Color3.fromRGB(0, 0, 0)
+Value.TextScaled = true
+Value.TextSize = 14.000
+Value.TextWrapped = true
+
+jp.Name = "jp"
+jp.Parent = options_2
+jp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+jp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jp.BorderSizePixel = 0
+jp.Position = UDim2.new(0.075075075, 0, 0.154464021, 0)
+jp.Size = UDim2.new(0, 65, 0, 35)
+jp.Font = Enum.Font.SourceSans
+jp.Text = "Jump Power"
+jp.TextColor3 = Color3.fromRGB(0, 0, 0)
+jp.TextScaled = true
+jp.TextSize = 14.000
+jp.TextWrapped = true
+
+UICorner_10.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_10.Parent = jp
+
+health.Name = "health"
+health.Parent = options_2
+health.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+health.BorderColor3 = Color3.fromRGB(0, 0, 0)
+health.BorderSizePixel = 0
+health.Position = UDim2.new(0.342342347, 0, 0.154620141, 0)
+health.Size = UDim2.new(0, 65, 0, 35)
+health.Font = Enum.Font.SourceSans
+health.Text = "Health"
+health.TextColor3 = Color3.fromRGB(0, 0, 0)
+health.TextScaled = true
+health.TextSize = 14.000
+health.TextWrapped = true
+
+UICorner_11.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_11.Parent = health
+
+fov.Name = "fov"
+fov.Parent = options_2
+fov.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fov.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fov.BorderSizePixel = 0
+fov.Position = UDim2.new(0.609609604, 0, 0.155088514, 0)
+fov.Size = UDim2.new(0, 65, 0, 35)
+fov.Font = Enum.Font.SourceSans
+fov.Text = "Fov"
+fov.TextColor3 = Color3.fromRGB(0, 0, 0)
+fov.TextScaled = true
+fov.TextSize = 14.000
+fov.TextWrapped = true
+
+UICorner_12.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_12.Parent = fov
+
+Other_2.Name = "Other"
+Other_2.Parent = ahfrm
+Other_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Other_2.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Other_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Other_2.BorderSizePixel = 0
+Other_2.Position = UDim2.new(0.623906612, 0, 0.503484309, 0)
+Other_2.Size = UDim2.new(0, 334, 0, 285)
+Other_2.Visible = false
+
+options_3.Name = "options"
+options_3.Parent = Other_2
+options_3.Active = true
+options_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+options_3.BackgroundTransparency = 1.000
+options_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+options_3.BorderSizePixel = 0
+options_3.Size = UDim2.new(0, 333, 0, 285)
+options_3.CanvasSize = UDim2.new(0, 0, 3, 0)
+options_3.ScrollBarThickness = 7
+
+iy.Name = "iy"
+iy.Parent = options_3
+iy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+iy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+iy.BorderSizePixel = 0
+iy.Position = UDim2.new(0.0240240246, 0, 0.00772009045, 0)
+iy.Size = UDim2.new(0, 65, 0, 35)
+iy.Font = Enum.Font.SourceSans
+iy.Text = "Infinite Yield"
+iy.TextColor3 = Color3.fromRGB(0, 0, 0)
+iy.TextScaled = true
+iy.TextSize = 14.000
+iy.TextWrapped = true
+
+UICorner_13.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_13.Parent = iy
+
+ih.Name = "ih"
+ih.Parent = options_3
+ih.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ih.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ih.BorderSizePixel = 0
+ih.Position = UDim2.new(0.270270258, 0, 0.00912518427, 0)
+ih.Size = UDim2.new(0, 65, 0, 35)
+ih.Font = Enum.Font.SourceSans
+ih.Text = "IceHub"
+ih.TextColor3 = Color3.fromRGB(0, 0, 0)
+ih.TextScaled = true
+ih.TextSize = 14.000
+ih.TextWrapped = true
+
+UICorner_14.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_14.Parent = ih
+
+esp.Name = "esp"
+esp.Parent = options_3
+esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+esp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+esp.BorderSizePixel = 0
+esp.Position = UDim2.new(0.519519508, 0, 0.00983169302, 0)
+esp.Size = UDim2.new(0, 65, 0, 35)
+esp.Font = Enum.Font.SourceSans
+esp.Text = "Esp"
+esp.TextColor3 = Color3.fromRGB(0, 0, 0)
+esp.TextScaled = true
+esp.TextSize = 14.000
+esp.TextWrapped = true
+
+UICorner_15.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_15.Parent = esp
+
+arsenal.Name = "arsenal"
+arsenal.Parent = options_3
+arsenal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+arsenal.BorderColor3 = Color3.fromRGB(0, 0, 0)
+arsenal.BorderSizePixel = 0
+arsenal.Position = UDim2.new(0.0240240246, 0, 0.0680915713, 0)
+arsenal.Size = UDim2.new(0, 65, 0, 35)
+arsenal.Font = Enum.Font.SourceSans
+arsenal.Text = "Arsenal"
+arsenal.TextColor3 = Color3.fromRGB(0, 0, 0)
+arsenal.TextScaled = true
+arsenal.TextSize = 14.000
+arsenal.TextWrapped = true
+
+UICorner_16.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_16.Parent = arsenal
+
+UICorner_17.CornerRadius = UDim.new(0, 4)
+UICorner_17.Parent = ahfrm
+
+title.Name = "title"
+title.Parent = drag
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+title.BorderSizePixel = 0
+title.Position = UDim2.new(0.263513595, 0, 0.0370370373, 0)
+title.Size = UDim2.new(0, 209, 0, 18)
+title.Font = Enum.Font.SourceSans
+title.Text = "AbsoluteHub - Old Gen Hack Style"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = drag
+Close.BackgroundColor3 = Color3.fromRGB(171, 0, 0)
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.941441417, 0, 0, 0)
+Close.Size = UDim2.new(0, 26, 0, 21)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+UICorner_18.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_18.Parent = Close
+
+UICorner_19.CornerRadius = UDim.new(0, 4)
+UICorner_19.Parent = drag
+
+buton.Name = "buton"
+buton.Parent = AbsoluteHub
+buton.AnchorPoint = Vector2.new(0.5, 0.5)
+buton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+buton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+buton.BorderSizePixel = 0
+buton.Position = UDim2.new(0.107476637, 0, 0.301181108, 0)
+buton.Size = UDim2.new(0, 46, 0, 45)
+buton.Font = Enum.Font.SourceSans
+buton.Text = "🎉"
+buton.TextColor3 = Color3.fromRGB(0, 0, 0)
+buton.TextScaled = true
+buton.TextSize = 14.000
+buton.TextWrapped = true
+
+UICorner_20.CornerRadius = UDim.new(1, 0)
+UICorner_20.Parent = buton
+
+-- Scripts:
+
+local function BZIRBUX_fake_script() -- LocalPlayer.change 
+	local script = Instance.new('LocalScript', LocalPlayer)
+
+	local other = script.Parent.Parent.Parent.Other
+	local lcp = script.Parent.Parent.Parent.LocalPlayer
+	local info = script.Parent.Parent.Parent.info
+	script.Parent.MouseButton1Click:Connect(function()
+		other.Visible = false
+		lcp.Visible = true
+		info.Visible = false
+	end)
+end
+coroutine.wrap(BZIRBUX_fake_script)()
+local function XABCP_fake_script() -- Other.change 
+	local script = Instance.new('LocalScript', Other)
+
+	local other = script.Parent.Parent.Parent.Other
+	local lcp = script.Parent.Parent.Parent.LocalPlayer
+	local info = script.Parent.Parent.Parent.info
+	script.Parent.MouseButton1Click:Connect(function()
+		other.Visible = true
+		lcp.Visible = false
+		info.Visible = false
+	end)
+end
+coroutine.wrap(XABCP_fake_script)()
+local function HMCBK_fake_script() -- Info.change 
+	local script = Instance.new('LocalScript', Info)
+
+	local other = script.Parent.Parent.Parent.Other
+	local lcp = script.Parent.Parent.Parent.LocalPlayer
+	local info = script.Parent.Parent.Parent.info
+	script.Parent.MouseButton1Click:Connect(function()
+		other.Visible = false
+		lcp.Visible = false
+		info.Visible = true
+	end)
+end
+coroutine.wrap(HMCBK_fake_script)()
+local function VSJGFUG_fake_script() -- Avatar.avatarpng 
+	local script = Instance.new('LocalScript', Avatar)
+
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	
+	-- Fetch the thumbnail
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size100x100
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	-- Set the ImageLabel's content to the user thumbnail
+	local imageLabel = script.Parent
+	imageLabel.Image = content
+	imageLabel.Size = UDim2.new(0, 100, 0, 100)
+end
+coroutine.wrap(VSJGFUG_fake_script)()
+local function THBXASS_fake_script() -- Name.Namer 
+	local script = Instance.new('LocalScript', Name)
+
+	local plr = game:GetService("Players").LocalPlayer
+	local plrName = plr.Name
+	script.Parent.Text = "Hello "..plrName.."!"
+end
+coroutine.wrap(THBXASS_fake_script)()
+local function UXFHPHY_fake_script() -- Name_2.Namer 
+	local script = Instance.new('LocalScript', Name_2)
+
+	local plr = game:GetService("Players").LocalPlayer
+	local plrDisName = plr.DisplayName
+	script.Parent.Text = "You are: "..plrDisName.."."
+end
+coroutine.wrap(UXFHPHY_fake_script)()
+local function ABCHRIC_fake_script() -- fling.flingdab 
+	local script = Instance.new('LocalScript', fling)
+
+	
+	--BROUGHT TO YOU BY RSCRIPTS.NET!--
+	
+	
+	local lp = game:FindService("Players").LocalPlayer
+	
+	local function gplr(String)
+		local Found = {}
+		local strl = String:lower()
+		if strl == "all" then
+			for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+				table.insert(Found,v)
+			end
+		elseif strl == "others" then
+			for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+				if v.Name ~= lp.Name then
+					table.insert(Found,v)
+				end
+			end 
+		elseif strl == "me" then
+			for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+				if v.Name == lp.Name then
+					table.insert(Found,v)
+				end
+			end 
+		else
+			for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+				if v.Name:lower():sub(1, #String) == String:lower() then
+					table.insert(Found,v)
+				end
+			end 
+		end
+		return Found 
+	end
+	
+	local function notif(str,dur)
+		game:FindService("StarterGui"):SetCore("SendNotification", {
+			Title = "Fling",
+			Text = str,
+			Icon = "rbxassetid://0",
+			Duration = dur or 3
+		})
+	end
+	
+	--sds
+	local TextButton = script.Parent
+	local TextBox = script.Parent.Parent.plrName
+	
+	TextButton.MouseButton1Click:Connect(function()
+		local Target = gplr(TextBox.Text)
+		if Target[1] then
+			Target = Target[1]
+	
+			local Thrust = Instance.new('BodyThrust', lp.Character.HumanoidRootPart)
+			Thrust.Force = Vector3.new(9999,9999,9999)
+			Thrust.Name = "YeetForce"
+			repeat
+				lp.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
+				Thrust.Location = Target.Character.HumanoidRootPart.Position
+				game:FindService("RunService").Heartbeat:wait()
+			until not Target.Character:FindFirstChild("Head"); Target.Character:FindFirstChild("HumanoidRootPart")
+		else
+			notif("No player detected.")
+		end
+	end)
+	
+	--//fsddfsdf
+	notif("yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes", 5)
+end
+coroutine.wrap(ABCHRIC_fake_script)()
+local function ASNV_fake_script() -- Kill.kill 
+	local script = Instance.new('LocalScript', Kill)
+
+	--BROUGHT TO YOU BY RSCRIPTS.NET!--
+	
+	
+	local lp = game:FindService("Players").LocalPlayer
+	
+	local function gplr(String)
+		local Found = {}
+		local strl = String:lower()
+		if strl == "all" then
+			for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+				table.insert(Found,v)
+			end
+		elseif strl == "others" then
+			for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+				if v.Name ~= lp.Name then
+					table.insert(Found,v)
+				end
+			end 
+		elseif strl == "me" then
+			for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+				if v.Name == lp.Name then
+					table.insert(Found,v)
+				end
+			end 
+		else
+			for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+				if v.Name:lower():sub(1, #String) == String:lower() then
+					table.insert(Found,v)
+				end
+			end 
+		end
+		return Found 
+	end
+	
+	local function notif(str,dur)
+		game:FindService("StarterGui"):SetCore("SendNotification", {
+			Title = "Fling",
+			Text = str,
+			Icon = "rbxassetid://2005276185",
+			Duration = dur or 3
+		})
+	end
+	
+	--sds
+	local TextButton = script.Parent
+	local TextBox = script.Parent.Parent.plrName
+	local Players = game:GetService("Players")
+	local plr = Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if TextBox.Text == "me" then
+			local hum = plr:FindFirstChildOfClass("Humanoid"); hum.Health = 0
+		end
+		if TextBox.Text == Players.Name then
+			local hum = Players.Name.LocalPlayer:FindFirstChildOfClass("Humanoid"); hum.Health = 0
+		end
+	end)
+end
+coroutine.wrap(ASNV_fake_script)()
+local function RODE_fake_script() -- options_2.test 
+	local script = Instance.new('LocalScript', options_2)
+
+	local plr = game:GetService("Players").LocalPlayer
+	while true do
+		wait(3)
+		local Players = game:GetService("Players"):Chat("Test")
+	end
+end
+coroutine.wrap(RODE_fake_script)()
+local function UVHNRFI_fake_script() -- ws.ws 
+	local script = Instance.new('LocalScript', ws)
+
+	local value = script.Parent.Parent.Value
+	local plr = game:GetService("Players").LocalPlayer
+	local hum = plr:FindFirstChildOfClass("Humanoid")
+	script.Parent.MouseButton1Click:Connect(function()
+		hum.WalkSpeed = value
+		local function notif(str,dur)
+			game:FindService("StarterGui"):SetCore("SendNotification", {
+				Title = "Fling",
+				Text = str,
+				Icon = "rbxassetid://0",
+				Duration = dur or 3
+			})
+		end
+		notif("Walkspeed changed to ["..value.."]!", 3)
+	end)
+end
+coroutine.wrap(UVHNRFI_fake_script)()
+local function FAVR_fake_script() -- jp.jp 
+	local script = Instance.new('LocalScript', jp)
+
+	local value = script.Parent.Parent.Value
+	local plr = game:GetService("Players").LocalPlayer
+	local hum = plr:FindFirstChildOfClass("Humanoid")
+	script.Parent.MouseButton1Click:Connect(function()
+		hum.UseJumpPower = true
+		hum.JumpPower = value
+		local function notif(str,dur)
+			game:FindService("StarterGui"):SetCore("SendNotification", {
+				Title = "Fling",
+				Text = str,
+				Icon = "rbxassetid://0",
+				Duration = dur or 3
+			})
+		end
+		notif("JumpPower changed to ["..value.."]!", 3)
+	end)
+end
+coroutine.wrap(FAVR_fake_script)()
+local function GQEY_fake_script() -- health.h e a l t h 
+	local script = Instance.new('LocalScript', health)
+
+	local value = script.Parent.Parent.Value
+	local plr = game:GetService("Players").LocalPlayer
+	local hum = plr:FindFirstChildOfClass("Humanoid")
+	script.Parent.MouseButton1Click:Connect(function()
+		hum.MaxHealth = value
+		hum.Health = value
+	end)
+end
+coroutine.wrap(GQEY_fake_script)()
+local function IBFT_fake_script() -- fov.fov 
+	local script = Instance.new('LocalScript', fov)
+
+	local function notif(str,dur)
+		game:FindService("StarterGui"):SetCore("SendNotification", {
+			Title = "Fling",
+			Text = str,
+			Icon = "rbxassetid://0",
+			Duration = dur or 3
+		})
+	end
+	local camera = workspace.Camera -- gets the camera
+	local textBox = script.Parent.Parent.Value -- gets the text box
+	local textBtn = script.Parent -- gets the text button
+	local FOV = Instance.new("IntValue", game.ReplicatedStorage)
+	FOV.Name = "FOV"
+	local FOVVal = game:GetService("ReplicatedStorage").FOV -- gets the FOV int value
+	
+	textBtn.MouseButton1Click:Connect(function()
+		FOVVal = textBox.Text
+		camera.FieldOfView = FOVVal.Value
+	end)
+end
+coroutine.wrap(IBFT_fake_script)()
+local function YNGCS_fake_script() -- iy.iy 
+	local script = Instance.new('LocalScript', iy)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+	end)
+end
+coroutine.wrap(YNGCS_fake_script)()
+local function AMBW_fake_script() -- ih.ih 
+	local script = Instance.new('LocalScript', ih)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+	end)
+end
+coroutine.wrap(AMBW_fake_script)()
+local function WDMWWY_fake_script() -- esp.esp 
+	local script = Instance.new('LocalScript', esp)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Holder = Instance.new("Folder", game.CoreGui)
+		Holder.Name = "ESP"
+	
+		local Box = Instance.new("BoxHandleAdornment")
+		Box.Name = "nilBox"
+		Box.Size = Vector3.new(4, 7, 4)
+		Box.Color3 = Color3.new(100 / 255, 100 / 255, 100 / 255)
+		Box.Transparency = 0.7
+		Box.ZIndex = 0
+		Box.AlwaysOnTop = true
+		Box.Visible = true
+	
+		local NameTag = Instance.new("BillboardGui")
+		NameTag.Name = "nilNameTag"
+		NameTag.Enabled = false
+		NameTag.Size = UDim2.new(0, 200, 0, 50)
+		NameTag.AlwaysOnTop = true
+		NameTag.StudsOffset = Vector3.new(0, 1.8, 0)
+		local Tag = Instance.new("TextLabel", NameTag)
+		Tag.Name = "Tag"
+		Tag.BackgroundTransparency = 1
+		Tag.Position = UDim2.new(0, -50, 0, 0)
+		Tag.Size = UDim2.new(0, 300, 0, 20)
+		Tag.TextSize = 20
+		Tag.TextColor3 = Color3.new(100 / 255, 100 / 255, 100 / 255)
+		Tag.TextStrokeColor3 = Color3.new(0 / 255, 0 / 255, 0 / 255)
+		Tag.TextStrokeTransparency = 0.4
+		Tag.Text = "nil"
+		Tag.Font = Enum.Font.SourceSansBold
+		Tag.TextScaled = false
+	
+		local LoadCharacter = function(v)
+			repeat wait() until v.Character ~= nil
+			v.Character:WaitForChild("Humanoid")
+			local vHolder = Holder:FindFirstChild(v.Name)
+			vHolder:ClearAllChildren()
+			local b = Box:Clone()
+			b.Name = v.Name .. "Box"
+			b.Adornee = v.Character
+			b.Parent = vHolder
+			local t = NameTag:Clone()
+			t.Name = v.Name .. "NameTag"
+			t.Enabled = true
+			t.Parent = vHolder
+			t.Adornee = v.Character:WaitForChild("Head", 5)
+			if not t.Adornee then
+				return warn("Adornee not found :(")
+			end
+			t.Tag.Text = v.Name
+			b.Color3 = Color3.new(v.TeamColor.r, v.TeamColor.g, v.TeamColor.b)
+			t.Tag.TextColor3 = Color3.new(v.TeamColor.r, v.TeamColor.g, v.TeamColor.b)
+			local Update
+			local UpdateNameTag = function()
+				if not pcall(function()
+						v.Character.Humanoid.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
+						local maxh = math.floor(v.Character.Humanoid.MaxHealth)
+						local h = math.floor(v.Character.Humanoid.Health)
+						t.Tag.Text = v.Name .. "\n" .. ((maxh ~= 0 and tostring(math.floor((h / maxh) * 100))) or "0") .. "%  " .. tostring(h) .. "/" .. tostring(maxh)
+					end) then
+					Update:Disconnect()
+				end
+			end
+			UpdateNameTag()
+			Update = v.Character.Humanoid.Changed:Connect(UpdateNameTag)
+		end
+	
+		local UnloadCharacter = function(v)
+			local vHolder = Holder:FindFirstChild(v.Name)
+			if vHolder and (vHolder:FindFirstChild(v.Name .. "Box") ~= nil or vHolder:FindFirstChild(v.Name .. "NameTag") ~= nil) then
+				vHolder:ClearAllChildren()
+			end
+		end
+	
+		local LoadPlayer = function(v)
+			local vHolder = Instance.new("Folder", Holder)
+			vHolder.Name = v.Name
+			v.CharacterAdded:Connect(function()
+				pcall(LoadCharacter, v)
+			end)
+			v.CharacterRemoving:Connect(function()
+				pcall(UnloadCharacter, v)
+			end)
+			v.Changed:Connect(function(prop)
+				if prop == "TeamColor" then
+					UnloadCharacter(v)
+					wait()
+					LoadCharacter(v)
+				end
+			end)
+			LoadCharacter(v)
+		end
+	
+		local UnloadPlayer = function(v)
+			UnloadCharacter(v)
+			local vHolder = Holder:FindFirstChild(v.Name)
+			if vHolder then
+				vHolder:Destroy()
+			end
+		end
+	
+		for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+			spawn(function() pcall(LoadPlayer, v) end)
+		end
+	
+		game:GetService("Players").PlayerAdded:Connect(function(v)
+			pcall(LoadPlayer, v)
+		end)
+	
+		game:GetService("Players").PlayerRemoving:Connect(function(v)
+			pcall(UnloadPlayer, v)
+		end)
+	
+		game:GetService("Players").LocalPlayer.NameDisplayDistance = 0
+	end)
+end
+coroutine.wrap(WDMWWY_fake_script)()
+local function LVELU_fake_script() -- arsenal.al 
+	local script = Instance.new('LocalScript', arsenal)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+	end)
+end
+coroutine.wrap(LVELU_fake_script)()
+local function DHNZY_fake_script() -- drag.dragging 
+	local script = Instance.new('LocalScript', drag)
+
+	local frm = drag
+	frm.Active = true
+	frm.Selectable = true
+	frm.Draggable = true
+end
+coroutine.wrap(DHNZY_fake_script)()
+local function FIFMFJ_fake_script() -- Close.close 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		warn(game.PlaceId.. " | AbsoluteHub Closed")
+		script.Parent.Parent.Parent:Remove()
+	end)
+	
+end
+coroutine.wrap(FIFMFJ_fake_script)()
+local function HQWX_fake_script() -- buton.open 
+	local script = Instance.new('LocalScript', buton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local ahfrm = script.Parent.Parent.drag.ahfrm
+		ahfrm.Visible = false
+		if ahfrm.Visible == true then
+			ahfrm.Visible = false
+		end
+	end)
+end
+coroutine.wrap(HQWX_fake_script)()
+local function OUEY_fake_script() -- AbsoluteHub.isLoaded 
+	local script = Instance.new('LocalScript', AbsoluteHub)
+
+	local plr = game:GetService("Players").LocalPlayer
+	local char = plr.Character
+	local head = char:FindFirstChild("Head")
+	-- MAKER
+	local gui = Instance.new("BillboardGui")
+	local image = Instance.new("ImageLabel")
+	local uicorner = Instance.new("UICorner")
+	gui.Parent = head
+	gui.MaxDistance = 50
+	gui.AlwaysOnTop = true
+	gui.ResetOnSpawn = false
+	gui.Size = UDim2.new(0, 48,0, 48)
+	gui.StudsOffset = Vector3.new(0, 2.3, 0)
+	image.Size = UDim2.new(0, 48,0, 48)
+	image.Parent = gui
+	image.Image = "rbxassetid://15866283259"
+	image.Position = Vector3.new(-19.375, 4.499, -14.54)
+	uicorner.Parent = image
+	-- getBits
+	local hi = function() end
+	print(hi.. " Is the result of the bits that you wanted.")
+end
+coroutine.wrap(OUEY_fake_script)()
